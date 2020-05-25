@@ -275,18 +275,18 @@ body {
     top: 0;
     left: -10%; }
     .card__layer_top {
-      background: url("../img/front_top.PNG") no-repeat;
+      background: url("front_top.PNG") no-repeat;
       background-size: 20% auto; }
     .card__layer_center {
-      background: url("../img/front_center.PNG") no-repeat;
+      background: url("front_center.PNG") no-repeat;
       background-size: 40% auto;
       top: 33%; }
     .card__layer_bottom {
-      background: url("../img/front_bottom.PNG") no-repeat;
+      background: url("front_bottom.PNG") no-repeat;
       background-size: 100% auto;
       top: 42%; }
     .card__layer_bottom-second {
-      background: url("../img/bottom.svg") no-repeat;
+      background: url("bottom.svg") no-repeat;
       background-size: 100% auto;
       top: 42%; }
     .card__layer_left-third {
