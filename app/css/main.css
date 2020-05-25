@@ -278,11 +278,11 @@ body {
       background: url(front_top.png) no-repeat;
       background-size: 20% auto; }
     .card__layer_center {
-      background: url(front_center.PNG) no-repeat;
+      background: url(front_center.png) no-repeat;
       background-size: 40% auto;
       top: 33%; }
     .card__layer_bottom {
-      background: url(front_bottom.PNG) no-repeat;
+      background: url(front_bottom.png) no-repeat;
       background-size: 100% auto;
       top: 42%; }
     .card__layer_bottom-second {
