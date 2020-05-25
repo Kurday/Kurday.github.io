@@ -286,23 +286,23 @@ body {
       background-size: 100% auto;
       top: 42%; }
     .card__layer_bottom-second {
-      background: url("bottom.svg") no-repeat;
+      background: url(bottom.svg) no-repeat;
       background-size: 100% auto;
       top: 42%; }
     .card__layer_left-third {
-      background: url("../img/bottom.svg") no-repeat;
+      background: url(../img/bottom.svg) no-repeat;
       background-size: cover; }
   .card__backlayer_top {
-    background: url("../img/back_top.PNG") no-repeat;
+    background: url(../img/back_top.PNG) no-repeat;
     background-size: 100%;
     top: -10%; }
   .card__backlayer_center {
-    background: url("../img/back_center.PNG") no-repeat;
+    background: url(../img/back_center.png) no-repeat;
     background-size: 40% auto;
     left: 60%;
     top: 30%; }
   .card__backlayer_bottom {
-    background: url("../img/back_bottom.PNG") no-repeat;
+    background: url(../img/back_bottom.png) no-repeat;
     background-size: 30% auto;
     top: 60%;
     left: 70%; }
