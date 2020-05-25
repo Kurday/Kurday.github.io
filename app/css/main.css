@@ -275,7 +275,7 @@ body {
     top: 0;
     left: -10%; }
     .card__layer_top {
-      background: url(front_top.png) no-repeat;
+      background: url(../img/front_top.png) no-repeat;
       background-size: 20% auto; }
     .card__layer_center {
       background: url(front_center.png) no-repeat;
