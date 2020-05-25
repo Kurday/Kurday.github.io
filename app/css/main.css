@@ -374,6 +374,7 @@ body {
         font-size: 32px;
         text-transform: uppercase; }
   .changeling__row {
+    
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

@@ -2,7 +2,7 @@ window.onload = function(e){
 
   const cards = document.querySelectorAll('.card'),
         card__button = document.querySelector('.card__button'),
-        front = document.querySelector('.front'),
+        front = document.querySelector('.card-item'),
         back = document.querySelector('.back'),
         card__backbutton = document.querySelector('.card__backbutton');
        
@@ -66,13 +66,13 @@ function initCards(){
 
 
 
-front.addEventListener('click', function(event){
+card__button.addEventListener('click', function(event){
   const target = event.target
-  const frontButton = target.closest('.front');
+  const frontButton = target.closest('.card-item');
 
   if (frontButton) {
      console.log('нажали');
-    }
+    } 
 });
 
 
