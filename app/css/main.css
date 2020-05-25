@@ -278,22 +278,22 @@ body {
       background: url(../img/front_top.png) no-repeat;
       background-size: 20% auto; }
     .card__layer_center {
-      background: url(front_center.png) no-repeat;
+      background: url(../img/front_center.png) no-repeat;
       background-size: 40% auto;
       top: 33%; }
     .card__layer_bottom {
-      background: url(front_bottom.png) no-repeat;
+      background: url(../img/front_bottom.png) no-repeat;
       background-size: 100% auto;
       top: 42%; }
     .card__layer_bottom-second {
-      background: url(bottom.svg) no-repeat;
+      background: url(../img/bottom.svg) no-repeat;
       background-size: 100% auto;
       top: 42%; }
     .card__layer_left-third {
       background: url(../img/bottom.svg) no-repeat;
       background-size: cover; }
   .card__backlayer_top {
-    background: url(../img/back_top.PNG) no-repeat;
+    background: url(../img/back_top.png) no-repeat;
     background-size: 100%;
     top: -10%; }
   .card__backlayer_center {
