@@ -1,0 +1,380 @@
+
+// 1. header
+// 2. Section Banner
+// 3. Section Service 
+
+
+
+
+@import "vars"
+@import "fonts"
+
+
+*
+	box-sizing: border-box
+
+body
+	font-family: 'Gotham', sans-serif
+
+
+.wrapper 
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100%;
+	overflow: hidden;
+
+	
+
+
+.container
+	max-width: 1170px
+	padding: 0px 10px
+	margin: auto
+	
+
+
+
+
+
+
+// ****************************  CARDS  ************************************************		
+
+
+
+.cards
+	&__row
+		display: flex
+		justify-content: space-between
+
+		align-items: center
+		margin-top: 200px
+		height: 600px
+		
+		perspective: 1000px	
+		transform-style: preserve-3d
+	
+
+.card 
+	padding: 20px
+	&:hover 
+	&__button
+		opacity: 1
+		transition: 0.5s
+		width: 40px
+		height: 40px
+		background: #eee
+		position: relative
+		top: 80%
+		left: 45%
+		border-radius: 50px
+		box-shadow: 3px -1px 26px 2px rgba(21, 146, 242, 0.8)
+		&:hover
+			box-shadow: 3px -1px 26px 2px #c00 
+			transform: rotate(180deg)
+		&::after
+			content: ''
+			background-image: url('../img/icon/arrow.png')
+			background-size: cover
+			position: absolute
+			top: 12%
+			left: 12%
+			width: 30px
+			height: 30px
+
+	&__backbutton
+		top: 40%
+		z-index: 5
+		left: 24%
+		width: 150px
+		height: 47px
+		background: #1592f2		
+		box-shadow: 3px -1px 26px 2px rgba(21, 146, 242, 0.5)
+		position: absolute
+		color: #fff
+		border-radius: 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		
+
+
+
+
+			
+	&-item
+		border-radius: 10px 
+		position: relative
+
+		height: 450px
+		width: 300px
+		left: 0
+		top: 0
+		overflow: hidden
+		transition: transform 0.8s
+		//двигаем в 3в карточки
+		// transform: rotateX(20deg)
+		box-shadow:  0 0 50px rgba(22, 0, 0, 0.1)
+
+	&__logo
+		margin-top: 30px
+		display: flex
+		justify-content: space-around
+		flex-direction: column
+		align-items: center
+		text-align: center
+		position: absolute
+		width: 100%
+		& img 
+			height: 70px
+			width: 100px
+			margin-bottom: 20px
+			//****************************CARD_BACK***************************		
+		&_back
+			display: inline-block
+			margin-top: 60px	
+			width: 60%
+			left: 20px
+
+	&__info
+		
+		margin-top: 80%
+		display: flex
+		justify-content: space-around
+		position: absolute
+
+		& ul 
+			& li 
+				display: flex
+				// justify-content: center
+				align-items: center
+				list-style: none
+				margin-bottom: 10px
+				width: 200px
+				& span 
+					color: #929496
+					font-weight: bold
+					text-transform: uppercase
+					font-size: 8px
+					margin-left: 10px
+				& div
+					border-radius: 50%
+					display: flex
+					justify-content: center
+					align-items: center
+					height: 30px
+					min-width: 30px
+					background: black
+					& img 
+						height: 10px
+	&__title
+		&_company
+			display: inline-block
+			font-weight: bold
+			font-size: 24px
+			padding-right: 10px
+		&_logo
+			font-weight: normal
+			font-size: 24px
+		&_slog
+			letter-spacing: 6px
+			color: #a7a8ab
+				//****************************CARD_BACK***************************	
+		&_backcompany
+			display: inline-block
+			font-weight: normal
+			font-size: 22px
+			padding-right: 10px
+			color: #67b1c3
+		&_backlogo
+			
+			color: #fff
+			font-weight: normal
+			font-size: 22px
+		&_backslog
+			display: inline-block
+			padding-top: 5px
+			color: #a7a8ab
+			font-size: 14px
+
+	//****************************BLACKLOGO***************************		
+	&__layer
+		position: absolute
+		width: 110%
+		height: 110%
+		top: 0 
+		left: -10%
+		
+		&_top
+			background: url('../img/card/primeryCard/front/front_top.png') no-repeat 
+			background-size: 20% auto
+		&_center
+			background: url('../img/card/primeryCard/front/front_center.png') no-repeat 
+			background-size: 40% auto
+			top: 33%
+		&_bottom
+			background: url('../img/card/primeryCard/front/front_bottom.png') no-repeat 
+			background-size: 100% auto
+			top: 42%
+		&_bottom-second
+			background: url('../img/card/secondCard/bottom.svg') no-repeat
+			background-size: 100% auto
+			top: 42%
+		&_left-third
+			// background-size: 300px 200px;
+			background: url('../img/card/thirdCard/bottom.svg') no-repeat
+			background-size: cover
+
+	&__backlayer
+		&_top
+			background: url('../img/card/primeryCard/back/back_top.png') no-repeat 
+			background-size: 100%
+			top: -10%
+		&_center 
+			background: url('../img/card/primeryCard/back/back_center.png') no-repeat 
+			background-size: 40% auto
+			left: 60%
+			top: 30%
+		&_bottom
+			background: url('../img/card/primeryCard/back/back_bottom.png') no-repeat 
+			background-size: 30% auto 
+			top: 60%
+			left: 70%
+
+
+@keyframes back-on
+	0%
+		right: 21%
+		transform: translate(0, 200%) rotate(20deg)
+	60%
+		right: 21%
+		transform: translate(0, 0) rotate(0deg)
+	100%
+		right: 33%
+		transform: translate(0, 0) rotate(0deg)		
+
+.buttonHover
+		box-shadow: 3px -1px 26px 2px #c00 
+		transform: rotate(180deg)
+
+.buttonMove
+	background: #6f3		
+	box-shadow: 3px -1px 26px 2px rgba(21, 146, 242, 1)
+.color
+	background: #67b1c3!important
+.hide		
+	opacity: 0
+					
+// **********************************перевертышь***********************************
+
+.changeling
+	margin-bottom: 100px
+	height: 800px
+	
+	&__title
+		
+		margin-top: 200px 
+		color: #394b50
+		& span
+			display: flex
+			justify-content: center
+			margin-top: 20px
+			
+			&:nth-child(1)
+				font-weight: 900
+				font-size: 32px
+				text-transform: uppercase
+			&:nth-child(2)
+
+	&__row
+		
+		display: flex
+		justify-content: space-between
+		
+		align-items: center
+		margin-top: 50px
+		height: 600px
+		
+		perspective: 1000px	
+		transform-style: preserve-3d
+
+
+.front__active
+	transform: perspective(600px) rotateY(-180deg)
+.back__active	
+	transform: perspective(600px) rotateY(0)!important
+
+.front,
+.back
+	// overflow: hidden
+	
+	backface-visibility: hidden
+	transition: transform .5s ease 
+	border-radius: 10px 
+
+	position: absolute
+
+	height: 450px
+	width: 300px
+
+.back
+	height: 450px
+	width: 300px
+	transform: perspective(600px) rotateY(180deg)
+	
+
+
+
+//анимация для кнопки на обратной стороне карточки
+.buttonBack
+		animation-name: mavic-on
+		animation-duration: 1s
+		animation-fill-mode: forwards
+
+@keyframes mavic-on
+	0%
+		opacity: 0
+		transform: translateX(-200%)
+	100%	
+		opacity: 1
+		transform: translateX(0)				
+
+
+.boxes
+	border: 3px solid red
+	height: 600px
+	display: flex 
+	justify-content: space-around
+	align-items: center
+
+	&__one
+		display: flex 
+		justify-content: space-around
+		align-items: center
+		border: 3px solid blue
+		height: 100px
+		width: 100px
+		&_child 
+			background: black
+			height: 25px
+			width: 25px
+
+
+		background: #ccc
+	&__two
+		border: 3px solid green
+		height: 100px
+		background: #ccc
+		width: 100px
+
+	&__three
+		border: 3px solid yellow
+		height: 100px
+		background: #ccc
+		width: 100px
+
+.highlight
+	box-shadow: 3px -1px 26px 2px rgba(21, 146, 242, 1)
+
+
+@import "media"
